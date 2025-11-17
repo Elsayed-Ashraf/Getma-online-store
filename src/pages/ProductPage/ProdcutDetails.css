@@ -1,0 +1,129 @@
+:root {
+ --main-color: #154785;
+  --p-color: #7b7b7b;
+  --white-color: #ffffff;
+
+  --bg-color: #f3f3f3;
+  --h-color: #253237;
+  --border-color: #d6d6d6d5;
+  --box-shadow: 10px 10px 15px #94949429;
+
+  --light-gray: #f3f3f3;
+  --text-light: rgba(255, 255, 255, 0.8);
+  --text-lighter: rgba(255, 255, 255, 0.6);
+  --hover-color: #00bfff;
+}
+
+.productdetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.productdetails .mainimage {
+  position: relative;
+  height: 30vh;
+  width:auto;
+  display: flex;
+  justify-content: center;
+}
+
+.productdetails .content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 3.2rem;
+  width: 60%;
+}
+.productdetails .content h3 {
+  color: var(--main-color);
+}
+.productdetails .content .rating {
+  font-size: 1.1rem;
+}
+.productdetails .content .avilability,
+.productdetails .content .brand {
+  font-size: 0.9rem;
+}
+.productdetails .content .avilability span,
+.productdetails .content .brand span {
+  color: var(--main-color);
+}
+.productdetails .content .desc {
+  font-size: 0.9rem;
+  font-weight: 200;
+  /* width: 70%; */
+}
+.productdetails .content p {
+  color: var(--main-color);
+}
+.productdetails .content button {
+  width: fit-content;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: var(--main-color);
+}
+.productdetails .content button.incart {
+  background-color: transparent;
+
+  border: solid 1px var(--main-color);
+  color: var(--main-color);
+}
+
+.productdetails .content button span svg {
+  font-size: 1rem;
+  margin: 5px 0 0 5px;
+
+  /* display: inline-block; */
+  /* width: 20px;
+        height: 20px; */
+}
+.images {
+  position: absolute;
+  width: 100%;
+  
+  top: 100%;
+  display: flex;
+  top: 105%;
+
+  /* left: -2%; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+.images .image {
+  cursor: pointer;
+  /* height: 20%; */
+  width: auto;
+}
+.content .icons {
+  color: var(--main-color);
+  /* background-color: red; */
+}
+.content .icons svg {
+  color: var(--main-color);
+  transition: 0.3s linear;
+  /* font-size: 1.1rem; */
+  margin-right: 10px;
+  background: #7e84fc26;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 7px;
+}
+.content .icons svg.favorites {
+  color: red;
+}
+.content .icons svg:hover {
+  cursor: pointer;
+  background: #7e84fc26;
+  transform: scale(1.1);
+}
+.relatedproduct {
+  /* margin-top: 50px; */
+  padding-top: 50px;
+}

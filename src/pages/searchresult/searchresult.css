@@ -1,0 +1,42 @@
+:root {
+  --main-color: #7e84fc;
+  --p-color: #7b7b7b;
+  --white-color: #fff;
+  --bg-color: #f3f3f3;
+  --h-color: #253237;
+  --border-color: #d6d6d6d5;
+  --box-shadow: 10px 10px 15px #94949429;
+}
+.search-result {
+  padding-top: 30px;
+}
+.search-result h4 {
+  /* padding: 20px 0;
+  font-size: 1.5rem;
+  color: var(--main-color); */
+  /* kk */
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+.search-result .not-found {
+  /* padding-left: 30px; */
+  /* kk */
+  text-align: center;
+  color: #777;
+  margin-top: 50px;
+}
+.search-result h4::first-letter {
+  text-transform: capitalize;
+}
+.search-result h4 span {
+  text-transform: none;
+  /* color: black; */
+  /* kk */
+  color: var(--main-color);
+}
+.contentsearch {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 20px;
+}

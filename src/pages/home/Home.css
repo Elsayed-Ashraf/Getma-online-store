@@ -1,0 +1,319 @@
+:root {
+  --main-color: #154785;
+  --p-color: #7b7b7b;
+  --white-color: #ffffff;
+
+  --bg-color: #f3f3f3;
+  --h-color: #253237;
+  --border-color: #d6d6d6d5;
+  --box-shadow: 10px 10px 15px #94949429;
+
+  --light-gray: #f3f3f3;
+  --text-light: rgba(255, 255, 255, 0.8);
+  --text-lighter: rgba(255, 255, 255, 0.6);
+  --hover-color: #00bfff;
+}
+
+@media (max-width: 768px) {
+  .mySwiper {
+    padding: 10px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  /* height: 23%; */
+  /* max-height: 50vh !important; */
+  margin-top: 20px;
+}
+@media (max-width: 992px) {
+  .mySwiper.introswiper {
+    height: 270px;
+    width: 75vw;
+    transform: translate(-11%);
+  }
+}
+@media (max-width: 768px) {
+  .mySwiper.introswiper {
+    height: 23%;
+    width: 90vw;
+    transform: translate(-17vw);
+  }
+}
+
+.swiper-slide {
+  /* height: 300px; */
+  text-align: center;
+  /* font-size: 18px; */
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* css style from swipper library */
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--main-color) !important;
+  font-size: 20% !important;
+  width: 7%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  /* ====================إخفاء الأسهم في الموبايل =====================*/
+  /* .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  } */
+
+}
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  width: 40%;
+}
+
+.swiper-content {
+
+  color: black;
+  text-align: left;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  width: 25vw;
+  padding: 5px;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  left: 7%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 992px) {
+  .swiper-content {
+    width: 71vw;
+    left: 7%;
+    font-size: 76%;
+  }
+}
+.swiper-content p {
+  width: 90%;
+  font-size: 1.1rem;
+
+  font-weight: 200;
+}
+@media (max-width: 992px) {
+  .swiper-content p {
+    font-size: 90%;
+  }
+  .swiper-content :nth-child(1) {
+    padding: 5px 0 !important;
+  }
+  .swiper-content :nth-child(3) {
+    padding: 5px 0 !important;
+  }
+}
+.swiper-content :nth-child(3) {
+  padding: 15px 0;
+  /* background-color: red; */
+}
+.swiper-content h1 {
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 2rem;
+
+}
+@media (max-width: 992px) {
+  .swiper-content h1 {
+    font-size: 100%;
+  }
+  .swiper-content button {
+    font-size: 75% !important;
+    margin-top: 3px;
+  }
+}
+
+.swiper-content button {
+
+  cursor: pointer;
+  background: var(--main-color);
+  text-transform: capitalize;
+  color: var(--white-color);
+  font-size: 0.9rem;
+  padding: 6px 9px;
+
+  border: none;
+
+  outline: none;
+  font-weight: 200;
+  border-radius: 21px;
+  transition: linear 0.3s;
+}
+.swiper-content button:hover {
+  background-color: #4b51c7;
+}
+/* start boxcategory  */
+.boxcategory {
+  margin-top: 50px;
+}
+.categoryAddress {
+  position: relative;
+  margin-bottom: 25px;
+}
+.boxcategory .categoryAddress h1 {
+  font-weight: 500 !important;
+  font-size: 2.3vw;
+  text-transform: capitalize;
+  color: var(--main-color);
+}
+.boxcategory .categoryAddress p {
+  font-size: 1.3vw;
+  font-weight: 200;
+  line-height: 1.7;
+}
+.boxcategory .categoryAddress::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  border-bottom: solid 2px var(--border-color);
+  /* border-bottom: solid 1px red; */
+  width: 100%;
+}
+.boxcategory .categoryAddress::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: -10px;
+  border-bottom: solid 2px var(--main-color);
+  /* border-bottom: solid 1px red; */
+  width: 10%;
+}
+
+.product {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  border: solid 1px var(--border-color);
+  outline: none;
+  transition: linear 0.3s;
+  display: flex !important ;
+  flex-direction: column !important;
+  justify-content: space-between;
+  flex-basis: 200px;
+  text-align: left;
+}
+.product:hover {
+  border-color: var(--main-color);
+  box-shadow: var(--box-shadow);
+}
+.product .product-icons {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 7px;
+
+  transition: linear 0.3s;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+}
+.product:hover .product-icons {
+  right: 10px;
+}
+.product .product-icons svg {
+  transition: linear 0.3s;
+  font-size: 1.3rem;
+  /*  */
+  color: #4b51c7;
+  background: #7e84fc26;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 7px;
+  text-align: center;
+}
+
+.product .product-icons svg:hover {
+  transform: scale(1.1);
+}
+.product .product-icons svg.favorites {
+  color: red; 
+ 
+}
+
+/* .swiper-pagination */
+.product .MuiPaper-root {
+  box-shadow: none;
+}
+
+.boxcategory .swiper .swiper-slide {
+  background-color: transparent;
+  text-align: left;
+}
+.product label {
+  font-size: 1.1rem !important;
+}
+.product img {
+  height: 120px !important;
+  width: auto;
+  padding: 5px 0px 0;
+  background: transparent;
+  margin: auto;
+  text-align: center;
+  object-fit: cover !important;
+}
+.product .MuiCardContent-root:last-child {
+  padding: 8px;
+}
+.MuiCardContent-root .price {
+  color: var(--main-color);
+}
+
+.boxcategory .swiper-button-prev svg,
+.boxcategory .swiper-button-next svg {
+  height: 1.5rem;
+  font-weight: 200;
+  position: relative;
+  right: 0;
+  z-index: 11;
+}

@@ -1,0 +1,24 @@
+:root {
+  --main-color: #154785;
+  --p-color: #7b7b7b;
+  --white-color: #ffffff;
+
+  --bg-color: #f3f3f3;
+  --h-color: #253237;
+  --border-color: #d6d6d6d5;
+  --box-shadow: 10px 10px 15px #94949429;
+
+  --light-gray: #f3f3f3;
+  --text-light: rgba(255, 255, 255, 0.8);
+  --text-lighter: rgba(255, 255, 255, 0.6);
+  --hover-color: #00bfff;
+}
+.heartpage {
+  padding-top: 50px;
+}
+.heartproduct {
+  display: grid;
+  gap: 15px;
+
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
